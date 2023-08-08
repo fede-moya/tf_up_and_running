@@ -40,3 +40,15 @@ variable "enable_autoscaling" {
   description = "If set to true, enable auto scaling"
   type = bool
 }
+
+variable "ami" {
+  description = "The AMI to use for the EC2 instance"
+  type        = string
+  default = "ami-0fb653ca2d3203ac1"
+}
+
+variable "server_text" {
+  type = string
+  description = "The text to return from the server"
+  default = "Hello, World!"
+}

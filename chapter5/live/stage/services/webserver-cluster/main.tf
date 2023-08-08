@@ -23,6 +23,8 @@ module "webserver_cluster" {
  min_size = 2
  max_size = 2
  enable_autoscaling = false
+ ami = "ami-0fb653ca2d3203ac1"
+ server_text = "Sundayyyyy test"
 }
 
 
